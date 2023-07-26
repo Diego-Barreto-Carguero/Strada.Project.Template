@@ -6,7 +6,7 @@ using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Strada.Templates.WebApi.Configurations.Swagger;
+namespace Strada.Template.WebApi.Configurations.Swagger;
 
 public class EnumSchemaFilter : ISchemaFilter
 {

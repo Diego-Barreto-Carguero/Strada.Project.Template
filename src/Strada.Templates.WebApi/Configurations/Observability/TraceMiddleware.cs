@@ -4,7 +4,7 @@
 
 using Serilog.Context;
 
-namespace Strada.Templates.WebApi.Configurations.Observability;
+namespace Strada.Template.WebApi.Configurations.Observability;
 
 public class TraceMiddleware
 {

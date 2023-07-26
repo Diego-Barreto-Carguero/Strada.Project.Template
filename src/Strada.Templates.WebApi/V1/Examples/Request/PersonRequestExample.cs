@@ -2,10 +2,10 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-using Strada.Templates.WebApi.V1.Models.Request;
+usingStrada.Template.WebApi.V1.Models.Request;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Templates.WebApi.V1.Examples.Request;
+namespace Strada.Template.WebApi.V1.Examples.Request;
 
 public record PersonRequestExample : IExamplesProvider<PersonRequest>
 {

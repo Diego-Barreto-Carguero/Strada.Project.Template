@@ -2,7 +2,7 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-namespace Strada.Templates.WebApi.Configurations.Redoc;
+namespace Strada.Template.WebApi.Configurations.Redoc;
 
 /// <summary>
 ///  This is an assembly markup class.

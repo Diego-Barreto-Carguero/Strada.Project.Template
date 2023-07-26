@@ -9,7 +9,7 @@ using Serilog.Exceptions;
 using Serilog.Filters;
 using Serilog.Sinks.Elasticsearch;
 
-namespace Strada.Templates.WebApi.Configurations.Observability;
+namespace Strada.Template.WebApi.Configurations.Observability;
 
 public static class LoggerExtensions
 {

@@ -4,7 +4,7 @@
 
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
-namespace Strada.Templates.WebApi.Configurations.Redoc;
+namespace Strada.Template.WebApi.Configurations.Redoc;
 
 public static class RedocExtentions
 {

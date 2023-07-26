@@ -3,13 +3,13 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Mvc;
-using Strada.Templates.WebApi.Configurations.Pagination;
-using Strada.Templates.WebApi.V1.Models.Base;
-using Strada.Templates.WebApi.V1.Models.Request;
-using Strada.Templates.WebApi.V1.Models.Responde;
+usingStrada.Template.WebApi.Configurations.Pagination;
+usingStrada.Template.WebApi.V1.Models.Base;
+usingStrada.Template.WebApi.V1.Models.Request;
+usingStrada.Template.WebApi.V1.Models.Responde;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Strada.Templates.WebApi.V1.Controllers;
+namespace Strada.Template.WebApi.V1.Controllers;
 
 [Route("api/v{version:apiVersion}/persons")]
 public partial class PersonController : MainController

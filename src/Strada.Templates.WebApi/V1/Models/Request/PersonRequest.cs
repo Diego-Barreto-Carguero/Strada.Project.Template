@@ -4,7 +4,7 @@
 
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Strada.Templates.WebApi.V1.Models.Request;
+namespace Strada.Template.WebApi.V1.Models.Request;
 
 public record PersonRequest
 {

@@ -11,15 +11,15 @@ using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Serilog;
-using Strada.Templates.WebApi.Configurations;
-using Strada.Templates.WebApi.Configurations.ErrorException;
-using Strada.Templates.WebApi.Configurations.Observability;
-using Strada.Templates.WebApi.Configurations.Redoc;
-using Strada.Templates.WebApi.Configurations.Swagger;
-using Strada.Templates.WebApi.V1.Validators.Request;
+usingStrada.Template.WebApi.Configurations;
+usingStrada.Template.WebApi.Configurations.ErrorException;
+usingStrada.Template.WebApi.Configurations.Observability;
+usingStrada.Template.WebApi.Configurations.Redoc;
+usingStrada.Template.WebApi.Configurations.Swagger;
+usingStrada.Template.WebApi.V1.Validators.Request;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Templates.WebApi;
+namespace Strada.Template.WebApi;
 
 public class Program
 {

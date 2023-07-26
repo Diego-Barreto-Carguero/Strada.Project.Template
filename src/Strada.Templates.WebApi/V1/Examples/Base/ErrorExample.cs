@@ -2,10 +2,10 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-using Strada.Templates.WebApi.V1.Models.Base;
+usingStrada.Template.WebApi.V1.Models.Base;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Templates.WebApi.V1.Examples.Base;
+namespace Strada.Template.WebApi.V1.Examples.Base;
 
 public record ErrorExample : IExamplesProvider<ErrorResponse>
 {

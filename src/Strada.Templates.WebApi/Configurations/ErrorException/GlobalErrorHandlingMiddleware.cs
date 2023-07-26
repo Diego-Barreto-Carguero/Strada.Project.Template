@@ -4,9 +4,9 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
-using Strada.Templates.WebApi.Configurations.ErrorException.Custom;
+usingStrada.Template.WebApi.Configurations.ErrorException.Custom;
 
-namespace Strada.Templates.WebApi.Configurations.ErrorException;
+namespace Strada.Template.WebApi.Configurations.ErrorException;
 
 public class GlobalErrorHandlingMiddleware
 {
