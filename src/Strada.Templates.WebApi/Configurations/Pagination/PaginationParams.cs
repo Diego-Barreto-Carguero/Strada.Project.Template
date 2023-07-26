@@ -4,7 +4,7 @@
 
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Strada.Template.WebApi.Configurations.Pagination;
+namespace Strada.Template.Api.Configurations.Pagination;
 
 public record PaginationParams
 {

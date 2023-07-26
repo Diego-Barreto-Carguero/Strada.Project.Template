@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Strada.Template.WebApi.V1.Resouces {
+namespace Strada.Template.Api.V1.Resouces {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Strada.Template.WebApi.V1.Resouces {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Strada.Template.WebApi.V1.Resouces.PersonMessageResource", typeof(PersonMessageResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Strada.Template.Api.V1.Resouces.PersonMessageResource", typeof(PersonMessageResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

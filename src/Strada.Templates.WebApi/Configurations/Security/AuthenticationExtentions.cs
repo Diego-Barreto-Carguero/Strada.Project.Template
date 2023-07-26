@@ -5,9 +5,9 @@
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-usingStrada.Template.WebApi.Configurations.Security;
+using Strada.Template.Api.Configurations.Security;
 
-namespace Strada.Template.WebApi.Configurations;
+namespace Strada.Template.Api.Configurations;
 
 public static class AuthenticationExtentions
 {

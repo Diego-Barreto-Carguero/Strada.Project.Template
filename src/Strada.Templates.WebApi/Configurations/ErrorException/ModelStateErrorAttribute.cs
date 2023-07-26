@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
 using Serilog;
 
-namespace Strada.Template.WebApi.Configurations.ErrorException;
+namespace Strada.Template.Api.Configurations.ErrorException;
 
 public class ModelStateErrorAttribute : ActionFilterAttribute
 {

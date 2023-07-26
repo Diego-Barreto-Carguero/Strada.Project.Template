@@ -2,11 +2,11 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-usingStrada.Template.WebApi.V1.Models.Request;
-usingStrada.Template.WebApi.V1.Models.Responde;
+using Strada.Template.Api.V1.Models.Request;
+using Strada.Template.Api.V1.Models.Responde;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Template.WebApi.V1.Examples.Response;
+namespace Strada.Template.Api.V1.Examples.Response;
 
 public record PersonResponseExample : IExamplesProvider<PersonResponse>
 {

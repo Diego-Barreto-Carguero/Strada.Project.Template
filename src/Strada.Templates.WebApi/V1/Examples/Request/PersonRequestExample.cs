@@ -1,11 +1,10 @@
 ﻿// <copyright file="PersonRequestExample.cs" company="Strada">
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
-
-usingStrada.Template.WebApi.V1.Models.Request;
+using Strada.Template.Api.V1.Models.Request;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Template.WebApi.V1.Examples.Request;
+namespace Strada.Template.Api.V1.Examples.Request;
 
 public record PersonRequestExample : IExamplesProvider<PersonRequest>
 {

@@ -2,9 +2,9 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-usingStrada.Template.WebApi.V1.Models.Request;
+using Strada.Template.Api.V1.Models.Request;
 
-namespace Strada.Template.WebApi.V1.Models.Responde;
+namespace Strada.Template.Api.V1.Models.Responde;
 
 public record PersonResponse
 {

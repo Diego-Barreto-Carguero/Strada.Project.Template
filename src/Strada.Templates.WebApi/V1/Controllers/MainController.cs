@@ -3,10 +3,10 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Mvc;
-usingStrada.Template.WebApi.Configurations.ErrorException;
+using Strada.Template.Api.Configurations.ErrorException;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Strada.Template.WebApi.V1.Controllers
+namespace Strada.Template.Api.V1.Controllers
 {
     [CustomAuthorizationFilter]
     [ApiController]

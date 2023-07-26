@@ -2,7 +2,7 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-namespace Strada.Template.WebApi.V1.Models.Base;
+namespace Strada.Template.Api.V1.Models.Base;
 
 public record ErrorResponse
 {

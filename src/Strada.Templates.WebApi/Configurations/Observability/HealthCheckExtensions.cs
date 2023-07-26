@@ -4,7 +4,7 @@
 
 using HealthChecks.UI.Client;
 
-namespace Strada.Template.WebApi.Configurations.Observability;
+namespace Strada.Template.Api.Configurations.Observability;
 
 public static class HealthCheckExtensions
 {

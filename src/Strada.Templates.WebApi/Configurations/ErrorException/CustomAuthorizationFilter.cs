@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Strada.Template.WebApi.Configurations.ErrorException;
+namespace Strada.Template.Api.Configurations.ErrorException;
 
 public class CustomAuthorizationFilter : ActionFilterAttribute, IAsyncAuthorizationFilter
 {

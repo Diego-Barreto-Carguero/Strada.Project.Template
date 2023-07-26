@@ -10,7 +10,7 @@ using Microsoft.OpenApi.Interfaces;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Strada.Template.WebApi.Configurations.Swagger;
+namespace Strada.Template.Api.Configurations.Swagger;
 
 public class SwaggerConfiguration : IConfigureNamedOptions<SwaggerGenOptions>
 {

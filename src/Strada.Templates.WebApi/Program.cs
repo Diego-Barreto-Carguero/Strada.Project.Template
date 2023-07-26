@@ -11,12 +11,12 @@ using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Serilog;
-usingStrada.Template.WebApi.Configurations;
-usingStrada.Template.WebApi.Configurations.ErrorException;
-usingStrada.Template.WebApi.Configurations.Observability;
-usingStrada.Template.WebApi.Configurations.Redoc;
-usingStrada.Template.WebApi.Configurations.Swagger;
-usingStrada.Template.WebApi.V1.Validators.Request;
+using Strada.Template.Api.Configurations;
+using Strada.Template.Api.Configurations.ErrorException;
+using Strada.Template.Api.Configurations.Observability;
+using Strada.Template.Api.Configurations.Redoc;
+using Strada.Template.Api.Configurations.Swagger;
+using Strada.Template.Api.V1.Validators.Request;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace Strada.Template.WebApi;

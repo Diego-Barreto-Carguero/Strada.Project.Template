@@ -2,7 +2,7 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-namespace Strada.Template.WebApi.Configurations.Pagination;
+namespace Strada.Template.Api.Configurations.Pagination;
 
 public record PaginationMetadata
 {

@@ -5,7 +5,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Strada.Template.WebApi.Configurations.Redoc;
+namespace Strada.Template.Api.Configurations.Redoc;
 
 public class RedocDocumentAttribute : IDocumentFilter
 {

@@ -2,7 +2,7 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-namespace Strada.Template.WebApi.Configurations.Swagger;
+namespace Strada.Template.Api.Configurations.Swagger;
 
 public static class ApiVersionExtensions
 {

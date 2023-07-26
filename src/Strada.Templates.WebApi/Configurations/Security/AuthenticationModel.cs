@@ -2,7 +2,7 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-namespace Strada.Template.WebApi.Configurations.Security
+namespace Strada.Template.Api.Configurations.Security
 {
     public record AuthenticationModel
     {

@@ -4,10 +4,10 @@
 
 using FluentValidation;
 using Microsoft.Extensions.Localization;
-usingStrada.Template.WebApi.V1.Models.Request;
-usingStrada.Template.WebApi.V1.Resouces;
+using Strada.Template.Api.V1.Models.Request;
+using Strada.Template.Api.V1.Resouces;
 
-namespace Strada.Template.WebApi.V1.Validators.Request;
+namespace Strada.Template.Api.V1.Validators.Request;
 
 public class PersonRequestValidator : AbstractValidator<PersonRequest>
 {

@@ -2,9 +2,9 @@
 // Copyright (c) Strada. All rights reserved.
 // </copyright>
 
-usingStrada.Template.WebApi.Configurations.Pagination;
+using Strada.Template.Api.Configurations.Pagination;
 
-namespace Strada.Template.WebApi.V1.Models.Base;
+namespace Strada.Template.Api.V1.Models.Base;
 
 public record CustomResponse<TModel> : DefaultResponse<TModel>
     where TModel : class

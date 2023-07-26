@@ -4,11 +4,10 @@
 
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.OpenApi.Models;
-usingStrada.Template.WebApi.Configurations.Redoc;
-usingStrada.Template.WebApi.Configurations.Swagger;
+using Strada.Template.Api.Configurations.Redoc;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace Strada.Template.WebApi.Configurations.Swagger;
+namespace Strada.Template.Api.Configurations.Swagger;
 
 public static class SwaggerExtensions
 {
