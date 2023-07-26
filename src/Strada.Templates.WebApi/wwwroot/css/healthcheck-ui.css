@@ -1,0 +1,19 @@
+:root {
+    --primaryColor: #000000;
+    --secondaryColor: #f4f4f4;
+    --bgMenuActive: #e56306;
+    --bgButton: #e56306;
+    --logoImageUrl: url('/wwwroot/images/logo.png');
+    --bgAside: var(--primaryColor);
+}
+
+h1 {
+    position: relative;
+    visibility: visible;
+    content: "Health checks status";
+}
+
+    h1:after {
+        content: " - Template API ";
+        visibility: visible;
+    }

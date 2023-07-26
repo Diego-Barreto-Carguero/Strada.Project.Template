@@ -1,0 +1,14 @@
+.topbar {
+    background-color: #000000 !important;
+}
+
+.topbar-wrapper a img {
+    content: url('/wwwroot/images/logo_strada.png');
+}
+
+.swagger-ui .scheme-container {
+    margin: 0;
+    padding: 0;
+    background: inherit;
+    box-shadow: none;
+}

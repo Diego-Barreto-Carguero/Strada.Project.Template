@@ -1,0 +1,20 @@
+{
+  // IMPORTANT: This file should be added as a solution item and linked to each project that use style cop, after that each linked file 
+  // should have its build action changed to C# analyzer additional file
+
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "Strada",
+      "documentationCulture": "en-US",
+      "documentExposedElements": false,
+      "documentInterfaces": true,
+      "documentInternalElements": false,
+      "documentPrivateElements": false,
+      "documentPrivateFields": false
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement": "outsideNamespace"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+name: Build Staging
+
+on:
+  push:
+    branches:
+      - qa
+  workflow_dispatch:
+    inputs:
+      choice:
+        type: choice
+        description: Escolha o Ambiente
+        options:
+          - staging
+      account:
+        description: 'Insira a Branch'
+        required: true
+      generate:
+        description: 'Insira uma tag'
+        required: true
+        default: ''
+
+env:
+  BRANCH: ${{ github.event.inputs.account }}
+  APPNAME: 'strada-monitoramento'
+  DOCKERFILE: 'Dockerfile'
+  MANIFEST_PATH: 'strada-monitoramento'
+  MANIFEST_REPO: 'carguero/staging-kubernetes-manifest'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      TAG: ${{ steps.vars.outputs.tag }}
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ env.BRANCH }}
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Set output
+        id: vars
+        run: |
+          echo "::set-output name=tag::$(echo -n ${{ env.BRANCH }} | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)-${{ github.event.inputs.generate }}"
+      - name: Login to ECR
+        uses: docker/login-action@v1
+        with:
+          registry: 815538987058.dkr.ecr.us-east-1.amazonaws.com
+          username: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Build and push - ${{ env.APPNAME }}
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ${{ env.DOCKERFILE }}
+          push: true
+          tags: 815538987058.dkr.ecr.us-east-1.amazonaws.com/${{ env.APPNAME }}:${{ steps.vars.outputs.tag }}
+          no-cache: true
+
+  update:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Check out Argo Manifests
+        uses: actions/checkout@master
+        with:
+          repository: ${{ env.MANIFEST_REPO }}
+          ref: master
+          token: ${{ secrets.CI_TOKEN }}
+
+      - name: Update image deployment
+        run: |
+          wget https://github.com/mikefarah/yq/releases/download/v4.13.5/yq_darwin_amd64.tar.gz -O yq_darwin_amd64.tar.gz && tar -xvf yq_darwin_amd64.tar.gz && chmod +x yq_darwin_amd64 && mv yq_darwin_amd64 yq
+          export IMAGE_TAG="815538987058.dkr.ecr.us-east-1.amazonaws.com/$APPNAME":${{ needs.build.outputs.TAG }}
+          yq e '.spec.template.spec.containers[0].image = env(IMAGE_TAG)' -i $MANIFEST_PATH/deployment-patch.yaml
+          rm -f yq yq.1 install-man-page.sh yq_darwin_amd64.tar.gz
+      - name: Commit & Push Argo
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.CI_TOKEN }}
+          repository: ${{ env.MANIFEST_REPO }}
+          branch: master
